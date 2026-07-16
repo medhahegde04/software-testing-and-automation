@@ -19,7 +19,7 @@ def test_user_login():
 
     # Verify whether the login was successful
     # Change == to != to verify unsuccessful login
-    assert driver.current_url == "https://github.com/" or "https://github.com/sessions/verified-device" 
+    assert driver.current_url == "https://github.com/" or driver.current_url == "https://github.com/sessions/verified-device"
 
     # Close the browser
     driver.quit()
